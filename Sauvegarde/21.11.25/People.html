@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Personnages</title>
+</head>
+
+<body id="bperso" onload="starwarsc(), starwarsp(), starwarsm()">
+    <header>
+        <a id="top"></a>
+        <a href="Index.html">Star wars : Recherche</a>
+        <nav id="cnav">
+            <a href="Movie.html"><button>Films</button></a>
+            <a href="People.html"><button>Personnages</button></a>
+            <a href="Planet.html"><button>Planètes</button></a>
+        </nav>
+    </header>
+    <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Recherche la force...">
+
+    <div id="information">
+        <div id="people">
+            <div class="card_people">
+                <div class="card_body"></div>
+            </div>
+        </div>
+        <div id="detail">
+            <div class="people_info"></div>
+        </div>
+    </div>
+
+
+    <script src="JS_perso.js"></script>
+</body>
+
+</html>

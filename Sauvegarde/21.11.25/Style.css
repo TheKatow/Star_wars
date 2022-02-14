@@ -1,0 +1,168 @@
+*{
+    cursor: url(Sw8.GIF), pointer;
+    /* margin: 0px;
+    padding: 0px; */
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: darkgrey;
+    background: url(https://www.fredzone.org/wp-content/uploads/2021/11/102408297_m.jpg.webp) no-repeat center center fixed;
+    background-size: cover;    
+    font-family: 'Roboto';
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    width: auto; 
+}
+a {
+    color: yellow;
+}
+a:link{
+    text-decoration: none;
+}
+/* .zoom{
+    background: url(https://www.fredzone.org/wp-content/uploads/2021/11/102408297_m.jpg.webp) no-repeat center center fixed;
+    animation: zoomit 4s steps(200);
+}
+@keyframes zoomit{
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 2000%;
+    }
+}
+
+#ibody {
+    transition: 3s;
+    transform: scale(10, 10);
+} */
+#bfilms{
+    background: url(vaisseau_portrait.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+#bperso{
+    background: url(fight.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+#bplanetes{
+    background: url(planet.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+header{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    font-size:  2em;
+    position: fixed;
+    width: 80%;
+    top: 0;
+}
+nav {
+    font-size: 0.5em;
+    padding:8px 16px;    
+    white-space:nowrap;
+}
+button {
+    background-color: black;
+    color: yellow;
+}
+button:hover{
+    box-shadow: yellow 1px 1px 10px 1px ;
+}
+ul {
+    color: white;
+    text-shadow: 2px 2px 3px black, 0 0 1em black, 1em 1em 1em black;
+}
+
+#searchbar{
+    background: url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 5px #f2f2f2;
+    border: 2px solid #f2f2f2;
+    color: #6A6F75;
+    width: 160px;
+    padding: 5px 5px 5px 30px;
+    border-radius: 5px;
+    text-shadow: 0 2px 3px #fff;
+    transition: all 0.7s ease 0s;
+    margin-top: 70px;
+  }
+
+  /* input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 70%;
+  } */
+#information {
+    display: inline;
+    grid-template-columns: 4fr 1fr ;
+}
+#people {
+    grid-column-start: 1;
+    margin: 0%;
+    padding: 0%;
+
+}
+.card_people {
+    width:100%;
+    margin:10px auto;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card_people>* {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.card_body {
+    padding-left: 10px;
+    background: linear-gradient(to bottom, silver, white 15%, black 99%);
+    box-shadow: 1px 1px 5px yellow;   
+}
+#detail {
+    display: none;
+    grid-column-start: 2;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-right: -50%;
+    padding: 5%;
+    background: linear-gradient(to bottom, silver, white 3%, black 99%);
+    box-shadow: 1px 1px 5px yellow;   
+}
+#crawl{
+    display: none;
+    background: linear-gradient(to bottom, silver, white 15%, black 99%);
+    box-shadow: 1px 1px 5px yellow;   
+    width: 97%;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+.scroll { 
+    display: block;
+    margin: 15px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center; 
+    animation: scroll 5s linear;
+    animation-iteration-count: 1;
+}
+.scroll:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll
+{
+    0% { top: 200px; color: yellow }
+    80%{ color: yellow}
+    100% { top: 0px; color: black }
+}
